@@ -67,3 +67,28 @@ footer{
 .content h4{
     text-align: center;;
 }
+
+
+@media(min-width:768px){
+    header{grid-area: header}
+    .hero{grid-area: hero}
+    .content{grid-area: content}
+    .main-text{grid-area: main-text}
+    .sidebar{grid-area: sidebar}
+    footer{grid-area: footer}
+
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "hero"
+        "content"
+        "footer";
+    }
+    
+    /* adjust content grid for this size */
+    .content{
+        grid-template-areas:
+        "main-text sidebar";
+    }
+}
