@@ -33,9 +33,27 @@ nav {
 }
 
 .hero {
-    background-color: #f4f4f4;
-    border-radius: 1rem;
-    margin: 1rem 2rem;
+	background-color: #f4f4f4;
+	border-radius: 1rem;
+	margin: 1rem 2rem;
 	padding: 2rem 1rem;
-    text-align: center;
+	text-align: center;
+}
+
+main {
+	padding: 2rem 1rem;
+	max-width: 900px;
+	margin: auto;
+}
+
+article,
+aside {
+  padding: 1rem;
+  background: #f4f4f4;
+  border-radius: 0.75rem;
+}
+
+.content {
+  display: grid;
+  gap: 1.5rem;
 }
