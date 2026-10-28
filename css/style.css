@@ -27,3 +27,15 @@ nav a {
 nav a:hover {
 	text-decoration: underline;
 }
+
+nav {
+	margin-top: 0.5rem;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+	padding: 2rem 1rem;
+    text-align: center;
+}
