@@ -62,3 +62,8 @@ footer{
     margin-top: 1rem;
     text-align: center;
 }
+
+.content h3,
+.content h4{
+    text-align: center;;
+}
