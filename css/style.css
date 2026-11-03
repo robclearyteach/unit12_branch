@@ -53,11 +53,6 @@ aside {
   border-radius: 0.75rem;
 }
 
-/* .content {
-  display: grid;
-  gap: 1.5rem;
-} */
-
 .sidebar{
     margin-top: 1.5rem;
 }
@@ -76,23 +71,23 @@ footer{
 @media(min-width:768px){
     header{grid-area: header}
     .hero{grid-area: hero}
-    .content{grid-area: content}
     .main-text{grid-area: main-text}
     .sidebar{grid-area: sidebar}
     footer{grid-area: footer}
 
     body{
+        min-height: 100vh;
+    }
+    body{
         display: grid;
-        grid-template-areas: 
-        "header"
-        "hero"
-        "content"
-        "footer";
+        gap: 1rem;
+        grid: 
+        "header  header     header   header" auto
+        ".       hero       hero          ." auto
+        ".       main-text  sidebar       ." 1fr
+        "footer  footer     footer   footer" auto
+        /1fr     3fr        1fr      1fr;
     }
     
-    /* adjust content grid for this size */
-    .content{
-        grid-template-areas:
-        "main-text sidebar";
-    }
+
 }
