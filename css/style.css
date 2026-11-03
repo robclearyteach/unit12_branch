@@ -77,17 +77,13 @@ footer{
 
     body{
         display: grid;
-        grid-template-areas: 
+        grid: 
         "header     header"
         "hero       hero"
-        "main-text  aside"
-        "footer     footer";
+        "main-text  sidebar"
+        "footer     footer"
+        /3fr        1fr;
     }
     
-    /* adjust content grid for this size */
-    .content{
-        display:grid;
-        grid-template-areas:
-        "main-text sidebar";
-    }
+
 }
