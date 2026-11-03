@@ -87,6 +87,7 @@ footer{
     
     /* adjust content grid for this size */
     .content{
+        display:grid;
         grid-template-areas:
         "main-text sidebar";
     }
